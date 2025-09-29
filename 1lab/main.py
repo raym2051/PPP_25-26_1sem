@@ -1,4 +1,4 @@
-if __name__ == "__mane__":
+if __name__ == "__main__":
     from random import *
 
     dano = []
