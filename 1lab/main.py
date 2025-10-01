@@ -1,9 +1,7 @@
 if __name__ == "__main__":
     from random import *
 
-    dano = []
-    for i in range(1, *sample(range(2,1000),1)):
-        dano.append(i)
+    dano = [i for i in range(1, *sample(range(2,1000), 1))]
 
     n = sample(range(2,1000),1)
 
