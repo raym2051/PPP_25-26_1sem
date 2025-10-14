@@ -1,7 +1,7 @@
 
 
 if __name__ == "__main__":
-    print('Возможные операции: +; -; *; /')
+    print('Возможные операции: +; -; *; //')
     roman_number = input('Введите римсике цифры и операции: ')
     
     roman_data = {
@@ -15,7 +15,7 @@ if __name__ == "__main__":
     }
     
     def rom_number(rom):
-        if '-' in rom or '+' in rom or '*' in rom or '/' in rom:
+        if '-' in rom or '+' in rom or '*' in rom or '//' in rom:
             return rom
         else:
             arab = 0
