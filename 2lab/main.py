@@ -33,33 +33,33 @@ if __name__ == "__main__":
         line = ''
         while arab > 0:
     
-            if arab - roman_data['M'] > 0:
+            if arab - 1000 > 0:
                 line += 'M'
-                arab -= roman_data['M']
+                arab -= 1000
     
-            elif arab - roman_data['D'] > 0:
+            elif arab - 500 > 0:
                 line += 'D'
-                arab -= roman_data['D']
+                arab -= 500
     
-            elif arab - roman_data['C'] > 0:
+            elif arab - 100 > 0:
                 line += 'C'
-                arab -= roman_data['C']
+                arab -= 100
     
-            elif arab - roman_data['L'] > 0:
+            elif arab - 50 > 0:
                 line += 'L'
-                arab -= roman_data['L']
+                arab -= 50
     
-            elif arab - roman_data['X'] > 0:
+            elif arab - 10 > 0:
                 line += 'X'
-                arab -= roman_data['X']
+                arab -= 10
     
-            elif arab - roman_data['V'] > 0:
+            elif arab - 5 > 0:
                 line += 'V'
-                arab -= roman_data['V']
+                arab -= 5
     
             else:
                 line += 'I'
-                arab -= roman_data['I']
+                arab -= 1
                 
         line = line.replace('VIIII','IX').replace('IIII','IV')\
         .replace('LXXXX','XC').replace('XXXX','XL')\
