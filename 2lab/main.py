@@ -60,7 +60,11 @@ if __name__ == "__main__":
             else:
                 line += 'I'
                 arab -= roman_data['I']
-    
+                
+        line = line.replace('VIIII','IX').replace('IIII','IV')\
+        .replace('LXXXX','XC').replace('XXXX','XL')\
+    .replace('DCCCC','CM').replace('CCCC','CD')
+        
         return line
     
     def calculation(sting):
